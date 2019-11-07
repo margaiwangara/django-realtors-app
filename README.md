@@ -86,3 +86,16 @@ Adding templates to be rendered in views functions add the following line of cod
   ]
 
 ```
+
+##### Adding static files
+
+```python
+
+# btre/settings.py
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATIC_URL = '/static/'
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'btre/static')
+]
+
+```
